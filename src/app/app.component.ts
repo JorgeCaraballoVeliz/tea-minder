@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tea-minder';
+  onClick() {
+    console.log("my button is working");
+  }
 }
