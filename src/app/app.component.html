@@ -4,3 +4,14 @@ app base
 <app-login></app-login>
 <app-register></app-register>
 <button mat-button (click)="onClick()">My Button</button>
+
+<div>
+    <h4>Navigation:</h4>
+    <router-outlet></router-outlet>
+
+    <button mat-button [routerLink]="['/pages/tea']" routerLinkActive="router-link-active">tea-list</button>
+    <button mat-button [routerLink]="['/pages/details/idTest']" routerLinkActive="router-link-active">tea-detail</button>
+    <button mat-button [routerLink]="['/auth/login']" routerLinkActive="router-link-active">login</button>
+    <button mat-button [routerLink]="['/auth/register']" routerLinkActive="router-link-active">register</button>
+
+</div>
