@@ -1,1 +1,18 @@
 <p>register works!</p>
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+    <div>
+        <label for="email">Introduzca su correo electrónico:</label>
+        <input type="email" name="email" formControlName="email">
+    </div>
+    <div>
+        <label for="nombre">Introduzca su nombre de usuario:</label>
+        <input type="text" name="nombre" formControlName="nombre">
+    </div>
+    <div>
+        <label for="contraseña">Introduzca su contraseña:</label>
+        <input type="password" name="contraseña" formControlName="contraseña">
+    </div>
+
+    <button type="submit" [disabled]="registerForm.invalid"> Registrame </button>
+</form>
+
