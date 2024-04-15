@@ -1,2 +1,4 @@
 <p>tea-list works!</p>
-
+<div *ngFor="let item of teaList$ | async" (click)="changeSelectedTea(item)" class="box">
+ {{ item.name | titlecase}}
+</div>

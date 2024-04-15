@@ -3,6 +3,10 @@ app base
 <div>
     <h4>Navigation:</h4>
     <router-outlet></router-outlet>
+    <div>{{ userUpadate | uppercase}}</div>
+    <div>
+        {{ teaSelected.name | uppercase}}
+    </div>
 
     <button mat-button [routerLink]="['/pages/tea']" routerLinkActive="router-link-active">tea-list</button>
     <button mat-button [routerLink]="['/pages/details/idTest']" routerLinkActive="router-link-active">tea-detail</button>
